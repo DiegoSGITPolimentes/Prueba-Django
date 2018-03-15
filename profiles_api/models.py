@@ -9,7 +9,7 @@ class UserProfileManager(BaseUserManager):
     """Helps Django work with our custom user model."""
 
     def create_user(self, email, name, password=None):
-        """Creates a new user profile."""
+        """Creates a new user profile.""" 
 
         if not email:
             raise ValueError('Users must have an email address.')
